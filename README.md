@@ -93,19 +93,44 @@ The **Claude Architect Foundation** certificate tests your understanding of:
 ```
 claude-architect-foundation/
 ├── 01-introduction-to-claude/
-├── 02-responsible-ai/
-├── 03-prompt-engineering/
-├── 04-architecture-patterns/
-├── 05-use-cases/
+├── 02-agentic-patterns/
+├── 03-tool-use-and-mcp/
+├── 04-structured-output-and-extraction/
+├── 05-claude-code-and-workflows/
 ├── practice-questions/
 └── revision-notes/
 ```
 
 ---
 
-## 📅 Study Plan
+## 📅 The Visual Study Path
 
-Find your complete study plans inside `study-plans/` folder.
+Here is the most effective way to go from beginner to certified for any course in this repo:
+
+```mermaid
+flowchart TD
+    A[1. Understand Core Concepts<br>Read Chapter Notes] --> B[2. Check Understanding<br>Attempt Chapter-wise Questions]
+    B --> C{Got Questions Wrong?}
+    C -- Yes --> D[Re-read specific notes<br>Focus on Explanations]
+    D --> B
+    C -- No --> E[3. Move to Next Chapter]
+    E --> F{All Chapters Done?}
+    F -- No --> A
+    F -- Yes --> G[4. Last Minute Prep<br>Use Quick Revision & Flashcards]
+    G --> H[5. Take Full Mock Test<br>Aim for 70%+]
+    H --> I((Ready for Exam!))
+
+    style A fill:#1e293b,stroke:#3b82f6,color:#fff
+    style B fill:#1e293b,stroke:#8b5cf6,color:#fff
+    style C fill:#334155,stroke:#94a3b8,color:#fff
+    style D fill:#1e293b,stroke:#ef4444,color:#fff
+    style E fill:#1e293b,stroke:#10b981,color:#fff
+    style G fill:#1e293b,stroke:#f59e0b,color:#fff
+    style H fill:#1e293b,stroke:#06b6d4,color:#fff
+    style I fill:#22c55e,stroke:#16a34a,color:#fff,stroke-width:2px
+```
+
+Find detailed daily schedules inside the `study-plans/` folder.
 
 **Quick Reference:**
 
@@ -115,6 +140,26 @@ Find your complete study plans inside `study-plans/` folder.
 | Claude Architect Foundation | 2–3 weeks (1 hr/day) | Beginner |
 
 Start with `study-plans/how-to-study.md` to understand how to use this repo properly.
+
+---
+
+## 🎯 Where to Focus to Get Certified (Based on Mock Tests)
+
+Before you begin, understand where the bulk of the exam questions come from. Focus your energy on these high-weightage topics:
+
+### 🟧 AWS Cloud Practitioner Focus Areas
+> **Over 60% of the exam** focuses on Security and Cloud Technology. Pay extra attention to:
+- **Service Comparisons**: Know exactly when to use *Macie* (PII data) vs *GuardDuty* (threats) vs *Inspector* (vulnerabilities).
+- **Serverless Architecture**: The classic `API Gateway + Lambda + DynamoDB` pattern appears frequently.
+- **Billing & Cost**: Differentiate between *Cost Explorer* (past analysis), *Pricing Calculator* (future estimates), and *AWS Budgets* (alerts).
+- **Shared Responsibility**: Always remember AWS manages the hypervisor and physical hardware; you manage the OS, data, and IAM.
+
+### 🟦 Claude Architect Foundation Focus Areas
+> **~50% of the exam** focuses on Tool Use and Agentic Patterns. Pay extra attention to:
+- **Tool Use & MCP**: Understand that MCP connects to servers, while Tool Use is how Claude executes functions. Always use specific, detailed tool descriptions.
+- **Handling Data Absence**: If extraction data is missing, the schema must return `null` — Claude should never fabricate missing data.
+- **Safety Gates**: Irreversible actions (like deleting resources or sending emails) must have a human-in-the-loop confirmation step.
+- **Code Review**: Independent reviews (in a fresh session) are necessary to avoid confirmation bias from the code generator.
 
 ---
 

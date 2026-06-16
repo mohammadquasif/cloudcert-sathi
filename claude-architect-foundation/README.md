@@ -79,17 +79,20 @@ claude-architect-foundation/
 
 ---
 
-## ✅ Recommended Chapter Order
+## ✅ Interactive Study Tracker
 
-Follow the chapters in this order for best results:
+Follow the chapters in this order for best results. Check them off as you go!
 
-1. `01-introduction-to-claude/` — Understand what Claude is and how it works
-2. `02-agentic-patterns/` — Learn how agents think, plan, and act
-3. `03-tool-use-and-mcp/` — Master tool use and MCP design — tested heavily
-4. `04-structured-output-and-extraction/` — JSON schemas, extraction patterns, batch processing
-5. `05-claude-code-and-workflows/` — Practical developer workflows with Claude Code
+- `[ ]` `01-introduction-to-claude/` — Understand what Claude is and how it works
+- `[ ]` `02-agentic-patterns/` — Learn how agents think, plan, and act
+- `[ ]` `03-tool-use-and-mcp/` — Master tool use and MCP design — tested heavily
+- `[ ]` `04-structured-output-and-extraction/` — JSON schemas, extraction patterns, batch processing
+- `[ ]` `05-claude-code-and-workflows/` — Practical developer workflows with Claude Code
 
-Then: **Practice Questions → Revision Notes → Mock Test**
+Then:
+- `[ ]` **Practice Questions** (`chapter-wise-questions.md`)
+- `[ ]` **Revision Notes** (`quick-revision.md`)
+- `[ ]` **Mock Tests** (`caf-mock-test-60q.html`)
 
 ---
 
@@ -101,16 +104,18 @@ Take the full 60-question mock test with a timer, auto-scoring, and detailed res
 
 ---
 
-## 💡 Top Exam Tips
+## 💡 Top Exam Tips (Based on the 60 Question Set)
 
-- **The Agentic Loop** — Know the observe → think → act → observe cycle deeply
-- **Tool Error Handling** — `isError: true` + structured error metadata (errorCategory, isRetryable) is the pattern
-- **MCP vs Tool Use** — MCP is a protocol for connecting Claude to external servers; tool use is how Claude calls any tool
-- **Batches API vs Real-Time** — Batch = cost savings + up to 24h window; Real-time = immediate response
-- **CLAUDE.md vs Skills** — CLAUDE.md = always-on instructions; Skills = activated on demand for specific tasks
-- **Null vs Fabrication** — When source data is missing, return null. Never fabricate field values.
-- **Session Forking** — Use `fork_session` to explore two approaches from the same starting point
-- **Independent Review** — A fresh agent reviewing code avoids confirmation bias from the generator
+- **The Agentic Loop** — Know the `observe → think → act → observe` cycle deeply. When an agent gets an error, it observes it and thinks about a retry strategy.
+- **Tool Error Handling** — `isError: true` + structured error metadata (`errorCategory`, `isRetryable`) is the standard pattern. Never throw raw backend exceptions directly to Claude.
+- **Context Degradation vs Limits** — Even if a 190,000-token document fits within the 200,000 limit, effective attention degrades near the end. Use overlapping chunking to extract scattered information reliably.
+- **Handling Missing Data (Null vs Fabrication)** — When extracting data, type optional fields as `['string', 'null']`. If the data isn't in the source text, returning `null` is mandatory. Do not let Claude fabricate "Not Specified" strings.
+- **Safety Gates for Irreversible Actions** — Any action with real-world consequences (deleting workspaces, sending emails, booking rooms) *must* include a Human-in-the-Loop step. A programmatic token exchange is the safest way to enforce this.
+- **Routing vs Chaining** — Use *Routing* when you have different inputs that need different handlers (e.g., classify language first). Use *Prompt Chaining* when you have a sequential, multi-step process where step B requires step A's output.
+- **Independent Code Review** — A fresh agent session reviewing code avoids confirmation bias. An agent reviewing its own generated code will just confirm its own design intent.
+- **Plan Mode & Exploration** — For large unfamiliar codebases, use "Architecture-first exploration" (orient, locate core class, trace). For major refactors, use Plan Mode to document the impact on all dependencies *before* changing anything.
+- **MCP vs Tool Use** — MCP is a protocol for connecting Claude to external servers without hardcoding integrations; Tool Use is the underlying mechanism Claude uses to execute those functions.
+- **CLAUDE.md vs Skills** — `CLAUDE.md` is for universal, always-on project standards. `Skills` are for infrequent, on-demand tasks (like load testing) to save context window tokens.
 
 ---
 
