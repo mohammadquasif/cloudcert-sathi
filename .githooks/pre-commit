@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# Check the author name and email
+author_name=$(git config user.name)
+author_email=$(git config user.email)
+
+# Lowercase them for comparison
+author_name_lower=$(echo "$author_name" | tr '[:upper:]' '[:lower:]')
+author_email_lower=$(echo "$author_email" | tr '[:upper:]' '[:lower:]')
+
+# Define forbidden patterns
+forbidden="shizisoftwares claude codex agent bot ai-agent"
+
+for pattern in $forbidden; do
+  if echo "$author_name_lower" | grep -q "$pattern" || echo "$author_email_lower" | grep -q "$pattern"; then
+    echo "=========================================================="
+    echo "Error: Commits from '$pattern' or AI agents are not allowed."
+    echo "Current Git user.name: $author_name"
+    echo "Current Git user.email: $author_email"
+    echo "Please configure your git user.name and user.email to your actual name."
+    echo "=========================================================="
+    exit 1
+  fi
+done
+
+exit 0

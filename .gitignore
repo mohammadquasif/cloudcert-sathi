@@ -216,3 +216,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AI Agents and Assistant tools (No commits/files from shizisoftwares, claude, codex or any AI agents)
+.shizisoftwares/
+.claude/
+.claudeprotocol
+.cursor/
+.cursorrules
+.codex/
+.gptengineer/
+.aider*
+.continue/
+.codeium/
+.supermaven/
+.tabnine/
+copilot-instructions.md
+

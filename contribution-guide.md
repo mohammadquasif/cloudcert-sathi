@@ -122,6 +122,15 @@ In the PR description, write:
 3. **Be accurate** — Double-check your content before submitting
 4. **Add explanations to questions** — Every practice question must have a clear explanation for the correct answer
 5. **No plagiarism** — All content must be your own original writing
+6. **No commits from AI agents or unauthorized bots** — Commits from Shizi Softwares, Claude, Codex, or other AI agents/bots are strictly not allowed to keep contributions authentic and human-written.
+
+### Setting Up the Commit Hook
+To help enforce this policy locally, you can enable the pre-commit hook by running:
+```bash
+git config core.hooksPath .githooks
+```
+This will automatically verify that your git user settings are configured with your real name and email before allowing commits.
+
 
 ---
 
