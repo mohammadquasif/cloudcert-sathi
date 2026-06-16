@@ -15,6 +15,9 @@ This is not an exam dump. This is not a copy-paste cheat sheet.
 
 This is a proper study guide — written in simple Indian English — so you can actually understand what you are studying, not just memorize it.
 
+### 🌟 Did you get certified using this repo?
+If this repo helped you pass your exam, please consider **giving it a star ⭐** to help other students find it!
+
 ---
 
 ## 👨‍🎓 Who Is This For?
@@ -141,6 +144,12 @@ Find detailed daily schedules inside the `study-plans/` folder.
 
 Start with `study-plans/how-to-study.md` to understand how to use this repo properly.
 
+### 🧠 Psychological Tips for Better Preparation
+1. **The Forgetting Curve**: You will forget 50% of what you learn within 24 hours unless you review it. Use the `flashcards/` for spaced repetition.
+2. **Active Recall**: Don't just read the notes passively. After each chapter, close the tab and try to explain the core concepts out loud to an imaginary 10-year-old.
+3. **Mock Exam Environment**: When taking the mock tests, treat them like the real exam. Sit in a quiet room, don't check your phone, and time yourself strictly. This trains your brain to handle exam pressure.
+4. **Learn from Mistakes**: Getting a practice question wrong is the best way to learn. Always read the explanations, even if you guessed correctly.
+
 ---
 
 ## 🎯 Where to Focus to Get Certified (Based on Mock Tests)
@@ -171,12 +180,16 @@ All practice questions in this repo are **100% original**.
 - They are **not** copied from any real exam
 - Each question has a **detailed explanation**
 
+### 📖 Interactive Study Guides (Live on GitHub Pages)
+You can read the full study guides with interactive sidebar navigation directly in your browser:
+👉 **[Read the Full Documentation Site](https://mohammadquasif.github.io/certification-study-hub/)**
+
 ### 🔥 Interactive Mock Tests (Live on GitHub Pages)
 
 No need to download anything! You can take the full timed mock tests directly in your browser:
 
-👉 **[AWS Cloud Practitioner 65-Q Mock Test](https://mohammadquasif.github.io/certification-study-hub/aws-cloud-practitioner/mock-tests/ccp-mock-test-65q.html)**
-👉 **[Claude Architect Foundation 60-Q Mock Test](https://mohammadquasif.github.io/certification-study-hub/claude-architect-foundation/mock-tests/caf-mock-test-60q.html)**
+👉 **[AWS Cloud Practitioner 65-Q Mock Test](https://mohammadquasif.github.io/certification-study-hub/docs/aws-cloud-practitioner/mock-tests/ccp-mock-test-65q.html)**
+👉 **[Claude Architect Foundation 60-Q Mock Test](https://mohammadquasif.github.io/certification-study-hub/docs/claude-architect-foundation/mock-tests/caf-mock-test-60q.html)**
 
 Find more inside:
 - `aws-cloud-practitioner/practice-questions/`

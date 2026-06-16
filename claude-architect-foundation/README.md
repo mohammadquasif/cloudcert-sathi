@@ -4,6 +4,9 @@ Welcome to the Claude Architect Foundation section of certification-study-hub!
 
 This section covers everything you need to clear the **Claude Architect Foundation** certificate offered by Anthropic.
 
+### 🌟 Did you get certified using this repo?
+If this repo helped you pass your exam, please consider **giving it a star ⭐** to help other students find it!
+
 ---
 
 ## 📂 Folder Structure
@@ -96,11 +99,26 @@ Then:
 
 ---
 
+## 📖 Interactive Study Guide (Live on GitHub Pages)
+
+You can read the full study guide with interactive sidebar navigation directly in your browser:
+👉 **[Read the Full Claude Architect Foundation Course](https://mohammadquasif.github.io/certification-study-hub/docs/claude-architect-foundation/README.html)**
+
+---
+
 ## 🔥 Interactive Mock Test
 
 Take the full 60-question mock test with a timer, auto-scoring, and detailed results directly in your browser:
 
-👉 **[Take the Claude Mock Test Live](https://mohammadquasif.github.io/certification-study-hub/claude-architect-foundation/mock-tests/caf-mock-test-60q.html)**
+👉 **[Take the Claude Mock Test Live](https://mohammadquasif.github.io/certification-study-hub/docs/claude-architect-foundation/mock-tests/caf-mock-test-60q.html)**
+
+---
+
+## 🧠 Psychological Tips for Better Preparation
+1. **The Forgetting Curve**: You will forget 50% of what you learn within 24 hours unless you review it. Use the `flashcards/` for spaced repetition.
+2. **Active Recall**: Don't just read the notes passively. After each chapter, close the tab and try to explain the core concepts out loud to an imaginary 10-year-old.
+3. **Mock Exam Environment**: When taking the mock test, treat it like the real exam. Sit in a quiet room, don't check your phone, and time yourself strictly. This trains your brain to handle exam pressure.
+4. **Learn from Mistakes**: Getting a practice question wrong is the best way to learn. Always read the explanations, even if you guessed correctly.
 
 ---
 
