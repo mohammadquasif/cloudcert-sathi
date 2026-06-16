@@ -1,6 +1,6 @@
-# 🤝 Contribution Guide — cloudcert-sathi
+# 🤝 Contribution Guide — certification-study-hub
 
-Welcome! We are happy that you want to contribute to **cloudcert-sathi**.
+Welcome! We are happy that you want to contribute to **certification-study-hub**.
 
 This guide will tell you exactly how to add your notes, questions, or improvements.
 
@@ -48,8 +48,8 @@ This creates your own copy of the repo.
 ### Step 2 — Clone Your Fork
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/cloudcert-sathi.git
-cd cloudcert-sathi
+git clone https://github.com/YOUR-USERNAME/certification-study-hub.git
+cd certification-study-hub
 ```
 
 ### Step 3 — Create a New Branch

@@ -1,6 +1,6 @@
 # Claude Architect Foundation — Study Hub
 
-Welcome to the Claude Architect Foundation section of cloudcert-sathi!
+Welcome to the Claude Architect Foundation section of certification-study-hub!
 
 This section helps you prepare for the **Claude Architect Foundation** certificate offered by Anthropic.
 

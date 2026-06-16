@@ -1,4 +1,4 @@
-# Flashcards — cloudcert-sathi
+# Flashcards — certification-study-hub
 
 Flashcards are the fastest way to revise before the exam.
 

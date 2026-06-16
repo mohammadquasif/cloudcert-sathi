@@ -1,6 +1,6 @@
 # AWS Cloud Practitioner — Study Hub
 
-Welcome to the AWS Cloud Practitioner section of cloudcert-sathi!
+Welcome to the AWS Cloud Practitioner section of certification-study-hub!
 
 This section covers everything you need to clear the **AWS Certified Cloud Practitioner (CLF-C02)** exam.
 

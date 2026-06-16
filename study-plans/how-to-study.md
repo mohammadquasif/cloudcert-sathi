@@ -153,4 +153,4 @@ You just need:
 
 ---
 
-*— cloudcert-sathi team*
+*— certification-study-hub team*

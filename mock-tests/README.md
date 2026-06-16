@@ -1,4 +1,4 @@
-# Mock Tests — cloudcert-sathi
+# Mock Tests — certification-study-hub
 
 This folder contains full-length and chapter-wise mock tests for both exams.
 

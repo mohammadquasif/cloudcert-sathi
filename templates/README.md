@@ -1,4 +1,4 @@
-# Templates — cloudcert-sathi
+# Templates — certification-study-hub
 
 This folder contains blank templates for contributing to this repo.
 

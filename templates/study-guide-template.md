@@ -134,4 +134,4 @@ Write 5–7 bullet points that summarize the most important things in this topic
 
 ---
 
-*Template by cloudcert-sathi. Use this template to contribute your own notes.*
+*Template by certification-study-hub. Use this template to contribute your own notes.*

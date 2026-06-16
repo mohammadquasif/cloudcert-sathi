@@ -1,4 +1,4 @@
-# Study Plans — cloudcert-sathi
+# Study Plans — certification-study-hub
 
 This folder contains day-wise and week-wise study plans for both certifications.
 

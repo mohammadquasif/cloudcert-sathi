@@ -1,12 +1,12 @@
-# ☁️ CloudCert Sathi — Your Cloud Certification Study Partner
+# ☁️ Certification Study Hub — Your Cloud Certification Study Partner
 
-> **Sathi** means *companion* in Hindi. This repo is your friendly study companion for cloud certification preparation.
+> This repo is your friendly study companion for cloud certification preparation.
 
 ---
 
 ## 📌 What Is This Repo?
 
-**cloudcert-sathi** is a simple, student-friendly repository to help you prepare for:
+**certification-study-hub** is a simple, student-friendly repository to help you prepare for:
 
 1. 🟧 **AWS Certified Cloud Practitioner (CLF-C02)**
 2. 🟦 **Claude Architect Foundation**

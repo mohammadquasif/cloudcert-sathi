@@ -123,4 +123,4 @@ Remember: *"A good friend is always Helpful, never Harmful, and always Honest"* 
 
 ---
 
-*Notes by cloudcert-sathi. Chapter 01 — Introduction to Claude.*
+*Notes by certification-study-hub. Chapter 01 — Introduction to Claude.*
